@@ -5,6 +5,10 @@
   align-content: center;
   justify-content: center;
   margin-block-start: 5%;
+  background: url(../img/heroJump.gif);
+  background-repeat: no-repeat;
+  background-position: 80% 35%;
+  height: 100vh
 }
 
 .logoContainer {
