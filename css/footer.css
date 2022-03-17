@@ -12,3 +12,11 @@
 h4.footer{
   font-size:  1.5rem;
 }
+
+@media (max-width:600px) {
+  h4.footer{
+    text-align: center;
+    font-size:  1rem;
+  }
+
+}
