@@ -1,0 +1,26 @@
+@import "./wrapper.css";
+@import "./navegacion.css";
+@import "./header.css";
+@import "./article.css";
+@import "./footer.css";
+@import "./hover.css";
+@import "./nosotros.css";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+:root {
+  --logo-font: "Bebas Neue", cursive;
+  --blanco: #d5d5d5;
+  --rojo: #e76161;
+  --negro: #181818;
+  --textBefore: #f5ebf54d;
+}
+body,
+html {
+  font-family: var(--logo-font);
+  margin: 0;
+  padding: 0;
+  background: var(--negro);
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: var(--blanco);
+}
+

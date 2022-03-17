@@ -1,0 +1,137 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin-block-start: 5%;
+}
+
+.logoContainer {
+  width: 50vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 5%;
+  /* border: 1px solid red; */
+}
+
+.imageContainer {
+  width: 30vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 5%;
+  /* border: 1px solid red; */
+  /* background-image: url('../img/foto.png'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  border-radius: 20px;
+}
+
+
+.fotoCV {
+  width: 80%;
+}
+
+.headerText {
+  font-size: 3rem;
+  text-align: start;
+  margin: 0;
+  word-spacing: 8px;
+}
+
+.icon{
+  text-align: center;
+}
+
+.text {
+  width: 100vw;
+  font-weight: 700;
+  font-size: 9rem;
+  letter-spacing: 5px;
+  text-align: center;
+  transform: rotate(-10deg) skew(15deg);
+}
+
+.text:before {
+  content: attr(data-text);
+  position: absolute;
+  top: 200;
+  left: 200;
+  text-shadow: none;
+  filter: blur(20px);
+  color: var(--textBefore);
+  z-index: -1;
+}
+
+
+h1:hover {
+  filter: grayscale(0);
+  transition: 2.5s ease;
+  color: var(--rojo);
+}
+
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+
+@media (max-width:600px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .logoContainer {
+    width: 99vw;
+    height: 49vh;
+    margin-block-start: 5%;
+  }
+
+  .headerText {
+    font-size: 2rem;
+    text-align: start;
+    margin-left: 10px;
+  }
+
+  .text {
+    font-size: 3.8rem;
+    letter-spacing: 5px;
+    transform: rotate(-10deg) skew(15deg);
+  }
+
+  .imageContainer {
+    width: 80vw;
+    height: 50vw;
+  }
+
+}
